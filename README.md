@@ -1,6 +1,6 @@
 # Katieeeeeeee — Anniversary Mini Game
 
-A small, mobile-friendly anniversary experience made for Katieeeeeeee. The visitor answers ten randomized romantic questions while a playful “NO” button tries to escape, then unlocks a surprise photo carousel.
+A small, mobile-friendly anniversary experience made for Katieeeeeeee. The visitor answers nine randomized romantic questions and one fixed final question while a playful “NO” button tries to escape, then unlocks a surprise photo carousel.
 
 ## Run locally
 
@@ -20,7 +20,7 @@ The final surprise contains 13 photos stored in `assets/images/gallery/`. The ca
 
 ## Customize the questions
 
-Edit the question pool in `assets/js/questions.js`. Ten unique questions are selected each time the game starts.
+Edit the question pool and fixed final question in `assets/js/questions.js`. Nine unique questions are selected randomly, and the fixed question is always shown as question 10.
 
 ## Publish with GitHub Pages
 

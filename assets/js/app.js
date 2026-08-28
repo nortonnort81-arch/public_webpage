@@ -84,10 +84,19 @@
     const pool = Array.isArray(window.ANNIVERSARY_QUESTIONS)
       ? window.ANNIVERSARY_QUESTIONS
       : [];
+    const finalQuestion = window.ANNIVERSARY_FINAL_QUESTION;
+    const randomizedQuestionCount = TOTAL_QUESTIONS - 1;
 
-    if (pool.length < TOTAL_QUESTIONS) return;
+    if (
+      pool.length < randomizedQuestionCount ||
+      !finalQuestion ||
+      typeof finalQuestion.text !== "string"
+    ) return;
 
-    questions = shuffle(pool).slice(0, TOTAL_QUESTIONS);
+    questions = [
+      ...shuffle(pool).slice(0, randomizedQuestionCount),
+      finalQuestion
+    ];
     currentQuestion = 0;
     showScreen(gameScreen);
     renderQuestion();

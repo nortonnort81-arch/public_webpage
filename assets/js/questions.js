@@ -1,4 +1,4 @@
-/* Edit this pool to personalize the game. Ten unique questions are picked per play. */
+/* Edit this pool to personalize the game. Nine unique questions are picked per play. */
 window.ANNIVERSARY_QUESTIONS = [
   { label: "A very serious question", text: "Do you think I’m funny?" },
   { label: "Be completely honest", text: "Do you save pictures of us that I don’t know about?" },
@@ -15,3 +15,9 @@ window.ANNIVERSARY_QUESTIONS = [
   { label: "In every lifetime", text: "If we met in another lifetime, would you want us to fall in love again?" },
   { label: "Final answer?", text: "If I asked you right now, “Do you love me?” would your answer be yes? ❤️" }
 ];
+
+/* This question is always shown as question 10. */
+window.ANNIVERSARY_FINAL_QUESTION = {
+  label: "One last thing",
+  text: "Will you forgive me for falling asleep like last night? 😿"
+};
