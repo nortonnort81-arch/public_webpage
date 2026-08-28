@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d3bc1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A little anniversary surprise for Katieeeeeeee.">
+  <title>For Katieeeeeeee 💜</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=4">
+  <script src="assets/js/questions.js?v=4" defer></script>
+  <script src="assets/js/app.js?v=4" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--one"></span>
+    <span class="ambient__orb ambient__orb--two"></span>
+    <span class="ambient__orb ambient__orb--three"></span>
+  </div>
+
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+  </div>
+
+  <main class="page-shell">
+    <section class="screen screen--welcome is-active" id="welcome-screen" aria-labelledby="welcome-title">
+      <div class="love-note">
+        <span class="love-note__eyebrow">A little something for</span>
+        <h1 id="welcome-title">Katieeeeeeee<span aria-hidden="true">.</span></h1>
+        <p class="love-note__greeting">Happy Official Anniversary</p>
+        <div class="love-note__divider" aria-hidden="true"><span>♥</span></div>
+        <p class="love-note__intro">
+          Before your surprise, I have a few very important questions for you.
+        </p>
+        <button class="button button--primary button--start" id="start-button" type="button">
+          <span>Let’s begin</span>
+          <span aria-hidden="true">→</span>
+        </button>
+        <p class="love-note__hint">It will only take a little love and ten tiny answers.</p>
+      </div>
+    </section>
+
+    <section class="screen screen--game" id="game-screen" aria-labelledby="question-text" hidden>
+      <div class="game-card">
+        <header class="game-card__header">
+          <div>
+            <p class="game-card__label" id="question-label">A very serious question</p>
+            <p class="game-card__counter"><span id="question-number">1</span> / 10</p>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Question progress" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1">
+            <span class="progress__fill" id="progress-fill"></span>
+          </div>
+        </header>
+
+        <div class="game-card__body">
+          <span class="question-mark" aria-hidden="true">?</span>
+          <h2 id="question-text">Loading your first question…</h2>
+          <p class="game-card__subtext">Choose wisely, my love.</p>
+        </div>
+
+        <div class="answer-zone" id="answer-zone">
+          <button class="button button--yes" id="yes-button" type="button">
+            YES <span aria-hidden="true">♥</span>
+          </button>
+          <button class="button button--no" id="no-button" type="button">NO</button>
+        </div>
+        <p class="answer-message" id="answer-message" aria-live="polite">I believe in you.</p>
+      </div>
+    </section>
+
+    <section class="screen screen--surprise" id="surprise-screen" aria-labelledby="surprise-title" hidden>
+      <div class="surprise-heading">
+        <p class="surprise-heading__eyebrow">You made it, my love</p>
+        <h2 id="surprise-title" tabindex="-1">Our favorite little moments</h2>
+        <p>Every photo is another reason I would choose you all over again.</p>
+      </div>
+
+      <div class="carousel" id="photo-carousel" aria-roledescription="carousel" aria-label="Our anniversary photo gallery">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="carousel-track">
+            <article class="carousel__slide is-current" aria-label="Photo 1 of 13">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-01.jpg')">
+                <img src="assets/images/gallery/photo-01.jpg" alt="Anniversary gallery photo 1 of Katieeeeeeee" fetchpriority="high">
+                <figcaption>01 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 2 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-02.jpg')">
+                <img src="assets/images/gallery/photo-02.jpg" alt="Anniversary gallery photo 2 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>02 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 3 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-03.jpg')">
+                <img src="assets/images/gallery/photo-03.jpg" alt="Anniversary gallery photo 3 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>03 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 4 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-04.jpg')">
+                <img src="assets/images/gallery/photo-04.jpg" alt="Anniversary gallery photo 4 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>04 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 5 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-05.jpg')">
+                <img src="assets/images/gallery/photo-05.jpg" alt="Anniversary gallery photo 5 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>05 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 6 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-06.jpg')">
+                <img src="assets/images/gallery/photo-06.jpg" alt="Anniversary gallery photo 6 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>06 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 7 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-07.jpg')">
+                <img src="assets/images/gallery/photo-07.jpg" alt="Anniversary gallery photo 7 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>07 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 8 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-08.jpg')">
+                <img src="assets/images/gallery/photo-08.jpg" alt="Anniversary gallery photo 8 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>08 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 9 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-09.jpg')">
+                <img src="assets/images/gallery/photo-09.jpg" alt="Anniversary gallery photo 9 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>09 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 10 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-10.jpg')">
+                <img src="assets/images/gallery/photo-10.jpg" alt="Anniversary gallery photo 10 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>10 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 11 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-11.jpg')">
+                <img src="assets/images/gallery/photo-11.jpg" alt="Anniversary gallery photo 11 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>11 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 12 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-12.jpg')">
+                <img src="assets/images/gallery/photo-12.jpg" alt="Anniversary gallery photo 12 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>12 / 13</figcaption>
+              </figure>
+            </article>
+            <article class="carousel__slide" aria-label="Photo 13 of 13" aria-hidden="true">
+              <figure class="gallery-photo" style="--photo: url('assets/images/gallery/photo-13.jpg')">
+                <img src="assets/images/gallery/photo-13.jpg" alt="Anniversary gallery photo 13 of Katieeeeeeee" loading="lazy" decoding="async">
+                <figcaption>13 / 13</figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__arrow" id="previous-slide" type="button" aria-label="Previous photo">←</button>
+          <div class="carousel__dots" id="carousel-dots" aria-label="Choose a photo"></div>
+          <button class="carousel__arrow" id="next-slide" type="button" aria-label="Next photo">→</button>
+        </div>
+      </div>
+
+      <div class="final-note">
+        <span aria-hidden="true">♥</span>
+        <p>Happy Official Anniversary, Katieeeeeeee.</p>
+        <strong>Here’s to us—and every beautiful chapter still waiting.</strong>
+        <em>Sorry for the delayed Gift😭😭</em>
+      </div>
+    </section>
+  </main>
+
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+</body>
+</html>
